@@ -6,7 +6,7 @@ const WeatherCard = ({ weather }) => {
   return (
     <>
     
-    <Card variant="outlined" style={{ display:"flex",justifyContent:"center",marginLeft:"520px", padding:"20px" ,width:"450px",height:"40vh"}} >
+    <Card variant="outlined" style={{ display:"flex",justifyContent:"center", padding:"20px" ,width:"450px",height:"40vh"}} >
     <CardContent>
       <Typography variant="h4" component="div">
         {weather.city}
