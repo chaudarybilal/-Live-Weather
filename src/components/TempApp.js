@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import { TextField } from '@mui/material';
+// import { useContext } from 'react';
+// import ThemeContext from '../ThemeContext';
 import "../Style/Style.css"
 
 const TempApp = ({ onSearch }) => {
@@ -14,12 +15,12 @@ const TempApp = ({ onSearch }) => {
     onSearch(searchTerm);
     setSearchTerm('');
   };
-
+  // const { theme } = useContext(ThemeContext);
   return (
     <>
-    <div className='main-div'>
+    <div className='main-div' >
     <form onSubmit={handleSubmit}>
-      <input
+      <input 
       className='input'
         label="Search"
         

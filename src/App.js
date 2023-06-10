@@ -16,7 +16,7 @@ const App = () => {
 
   const muiTheme = createTheme({
     palette: {
-      mode: theme,
+      mode: theme,  
       primary:orange,
       secondary: blue,
     },

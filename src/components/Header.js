@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Box } from '@mui/material';
 import { Brightness4 as DarkIcon, Brightness7 as LightIcon } from '@mui/icons-material';
 import ThemeContext from '../ThemeContext';
 
@@ -11,7 +11,10 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" color={theme === 'dark' ? 'default' : 'primary'}>
+    
+      <Box sx={{ flexGrow: 1 }}>
+
+     <AppBar position="static" color={theme === 'dark' ? 'default' : 'primary'} >
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Weather App
@@ -23,7 +26,9 @@ const Header = () => {
           {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
         </Typography>
       </Toolbar>
-    </AppBar>
+      </AppBar>
+      </Box>
+    
   );
 };
 
